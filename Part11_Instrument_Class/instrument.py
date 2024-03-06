@@ -1,5 +1,6 @@
 import pandas as pd
 import utils
+import os
 
 class Instrument():
     def __init__(self, ob):
@@ -23,6 +24,8 @@ class Instrument():
 
 
 if __name__ == "__main__":
-    print(Instrument.get_instruments_list())
+    df = Instrument.get_instruments_list()
+    print(df)
+
 
 
